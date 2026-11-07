@@ -9,7 +9,7 @@ Software original de simulación de mecánica de vuelo no lineal de **6 Grados d
 
 ## Usar desde un enlace
 
-Abre **[el simulador AERO-GNC](https://marianoudb.github.io/Proyecto-DAS/)** en un navegador moderno. No necesitas instalar Python ni las librerías del proyecto. También puedes abrir `Abrir simulador.url`.
+Abre **[el simulador AERO-GNC](https://marianoudb.github.io/Proyecto-DAS/)** 
 
 La primera carga descarga Python y NumPy mediante [Pyodide](https://pyodide.org/). Mientras carga, el panel identifica una vista previa precalculada. Cuando aparece "Motor Python en el navegador", cada pulsación de **Simular vuelo** calcula una corrida nueva con la aeronave y las condiciones meteorológicas elegidas. Los cálculos se ejecutan en un Web Worker para mantener la interfaz disponible.
 
@@ -49,17 +49,12 @@ node --test tests/test_playback.js
 
 Node sólo se usa para comprobar JavaScript durante el desarrollo. Los visitantes no lo necesitan.
 
-### Publicar en GitHub Pages
-
-El repositorio es [MarianoUDB/Proyecto-DAS](https://github.com/MarianoUDB/Proyecto-DAS). Una vez subido el proyecto, el propietario debe abrir [Settings → Pages](https://github.com/MarianoUDB/Proyecto-DAS/settings/pages) y elegir **GitHub Actions** como fuente de publicación. Esta configuración se realiza una sola vez.
 
 El flujo `.github/workflows/pages.yml` comprueba Python y JavaScript, empaqueta el motor y publica únicamente `web/`. Se ejecuta al actualizar `main` y también se puede lanzar con **Actions → Publicar simulador → Run workflow**. Los errores de pruebas detienen la publicación.
 
 El enlace de GitHub Pages es:
 
 **https://marianoudb.github.io/Proyecto-DAS/**
-
-Si se prefiere publicar desde una rama, la raíz también contiene la portada, los scripts y los datos necesarios; se puede seleccionar `main` y `/(root)` en Settings → Pages. El flujo incluido usa GitHub Actions como opción principal.
 
 ---
 
