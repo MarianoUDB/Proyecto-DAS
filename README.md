@@ -5,6 +5,11 @@
 [![Pruebas y publicación](https://github.com/MarianoUDB/Proyecto-DAS/actions/workflows/pages.yml/badge.svg)](https://github.com/MarianoUDB/Proyecto-DAS/actions/workflows/pages.yml)
 [![Validation: Nelson 1998](https://img.shields.io/badge/validation-Nelson%20(1998)%20%3C1.5%25-blue.svg)](docs/REPORTE_TECNICO_INGENIERIA.md)
 
+Integrantes
+Mariano Daniel Guzmán Cáceres GC230144
+Armando José Muñóz Hernandez MH230145
+Jaime Josue Diaz Rivera DR230135
+
 Software original de simulación de mecánica de vuelo no lineal de **6 Grados de Libertad (6-DOF)**, atmósfera estándar ISA, perturbaciones meteorológicas (cizalladura de baja cota, microrráfaga convectiva FAA AC 00-54 y turbulencia continua Dryden) y sistema de guiado, navegación y control (**GNC**) para aproximaciones por instrumentos (**ILS Cat I**) con aeronaves de transporte comercial y aviación general.
 
 ## Usar desde un enlace
